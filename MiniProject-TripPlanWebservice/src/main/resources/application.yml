@@ -1,0 +1,58 @@
+server:
+  port: 4041
+spring:
+  application:
+    name: MiniProject-TripPlanWebservice
+  datasource:
+    driver-class-name: org.h2.Driver
+    password: arun
+    url: jdbc:h2:mem:testdb
+    username: arun
+  h2:
+    console:
+      enabled: true
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger.html
+    
+content:
+  messages:
+    return_messages:
+      travel_plan:
+        save_success: Travel plan saved successfully with id
+        save_error: Unable to save travel plan
+        update_success: Travel plan Updated successfully
+        update_error: Unable to update travel plan as there is no travel plan with id
+        delete_success: Travel plan deleted successfully
+        delete_error: Unable to delete travel plan as there is no travel plan with id 
+        fetch_error: There is no travel plan  with id
+        fetch_dest_error: There are no travel plans with destination
+      travel_category:
+        save_success: Travel category saved successfully with id
+        save_error: Unable to save travel category
+        update_success: Travel category Updated successfully
+        update_error: Unable to update travel category as there is no travel category with id
+        delete_success: Travel category deleted successfully
+        delete_error: Unable to delete travel category as there is no travel category with id 
+        fetch_error: There is no travel category with id
+        
+        
+         
+       
+      
+     
+      
+    
+    
+     
+    
+    
+    
+      
+  
